@@ -103,6 +103,11 @@ var sumBelow = function(n) {
 // 6. Get the integers within a range (x, y).
 // range(2,9); // [3,4,5,6,7,8]
 var range = function(x, y) {
+    // input: two integers
+    // output: an array with all ints in between x and y
+    // base case: if no integers in between return empty array
+    var result = [];
+    
 };
 
 // 7. Compute the exponent of a number.
