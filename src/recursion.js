@@ -64,6 +64,21 @@ var arraySum = function(array) {
 
 // 4. Check if a number is even.
 var isEven = function(n) {
+    // input: a number
+    // output: a boolean
+    // constraints: no mod, and use recursion
+    // base case: cant be odd
+    // divide number until it hits 0
+    n = Math.abs(n);
+
+    if (n === 0) {
+        return true;
+    }
+
+    if (n === 1) {
+        return false;
+    }
+    return isEven(n - 2);
 };
 
 // 5. Sum all integers below a given integer.
