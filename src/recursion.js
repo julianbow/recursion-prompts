@@ -204,7 +204,20 @@ var reverse = function(string) {
 };
 
 // 10. Write a function that determines if a string is a palindrome.
+// ex: racecar backwards is racecar
 var palindrome = function(string) {
+    // input: a string
+    // output: true or fasle if string is palindrome
+    string = string.toLowerCase();
+
+    if (string.length === 0 || string.length === 1) {
+        return true;
+    }
+
+    if (string[0] === string[string.length - 1]) {
+        return palindrome(string.slice(1, string.length - 1));
+    }
+    return false;
 };
 
 // 11. Write a function that returns the remainder of x divided by y without using the
